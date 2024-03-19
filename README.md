@@ -6,7 +6,6 @@
 # :bulb: Sobre
 
 Uma simples To-Do List feita em React como desafio do Ignite da Rocketseat.
-<br/>
 
 # :page_with_curl: Pré-requisitos
 
@@ -15,7 +14,6 @@ Antes de começar, certifique-se de ter o Node.js instalado em sua máquina.
 <a href="https://nodejs.org">
   <img width="50" src="https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png" alt="Node.js" title="Node.js"/>
 </a>
-<br/>
 
 # :gear: Configuração
 
@@ -42,7 +40,6 @@ npm install
 ```bash
 npm run dev
 ```
-<br/>
 
 # :computer_mouse: Uso da aplicação
 
@@ -50,7 +47,6 @@ npm run dev
 2. Cadastre a tarefa que gostaria de realizar
 3. Marque as tarefas como concluídas
 4. Exclua as tarefas
-<br/>
 
 # :computer: Tecnologias utilizadas
 
@@ -59,8 +55,7 @@ npm run dev
 <img width="50" src="https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png" alt="TypeScript" title="TypeScript"/>
 <img width="50" src="https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png" alt="Tailwind CSS" title="Tailwind CSS"/>
 </p>
-<br/>
 
-# :page_facing_up:	 Licença
+# :page_facing_up: Licença
 
 Este projeto está licenciado sob a [Licença MIT](LICENSE).
