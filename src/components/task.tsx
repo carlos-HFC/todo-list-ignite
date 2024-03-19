@@ -18,27 +18,27 @@ export function Task(props: Readonly<TaskProps>) {
       )}
       onClick={props.onToggle}
     >
-      <div>
-        {props.checked ? (
-          <div className="relative">
-            <Circle
-              size={24}
-              weight="fill"
-              className="fill-purple-dark group-hover:fill-purple"
-            />
-            <Check className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" />
-          </div>
-        ) : (
-          <Circle
-            size={24}
-            className="fill-blue group-hover:fill-blue-dark"
-          />
-        )}
+      <div className="relative">
+        <Circle
+          size={24}
+          weight={props.checked ? "fill" : undefined}
+          className={
+            props.checked
+              ? "fill-purple-dark group-hover:fill-purple"
+              : "fill-blue group-hover:fill-blue-dark"
+          }
+        />
+        <Check
+          className={cn(
+            "absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2",
+            !props.checked && "hidden",
+          )}
+        />
       </div>
 
       <div
         className={cn(
-          "text-gray-100 text-sm flex-1",
+          "text-gray-100 text-sm flex-1 select-none",
           props.checked && "line-through text-gray-300",
         )}
       >

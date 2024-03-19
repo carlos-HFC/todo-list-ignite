@@ -24,6 +24,8 @@ export function App() {
   function handleCreateTask(event: FormEvent) {
     event.preventDefault()
 
+    if (!task.trim()) return
+
     const item = {
       id: String(Date.now()),
       task,
