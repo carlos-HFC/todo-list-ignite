@@ -1,30 +1,64 @@
-# React + TypeScript + Vite
+<p align="center">
+  <img src="src/assets/logo.svg" width="500" />
+</p>
+<br/><br/>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# :bulb: Sobre
 
-Currently, two official plugins are available:
+Uma simples To-Do List feita em React como desafio do Ignite da Rocketseat.
+<br/><br/>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# :page_with_curl: Pré-requisitos
 
-## Expanding the ESLint configuration
+Antes de começar, certifique-se de ter o Node.js instalado em sua máquina.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+<a href="https://nodejs.org">
+  <img width="50" src="https://user-images.githubusercontent.com/25181517/183568594-85e280a7-0d7e-4d1a-9028-c8c2209e073c.png" alt="Node.js" title="Node.js"/>
+</a>
+<br/><br/>
 
-- Configure the top-level `parserOptions` property like this:
+# :gear: Configuração
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+1. Clone o repositório para sua máquina local:
+
+```bash
+git clone https://github.com/carlos-HFC/todo-list-ignite
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Acesse o diretório do projeto:
+
+```bash
+cd todo-list-ignite
+```
+
+3. Instale as dependências:
+
+```bash
+npm install
+```
+
+4. Rode a aplicação
+
+```bash
+npm run dev
+```
+<br/><br/>
+
+# :computer_mouse: Uso da aplicação
+
+1. Abra o navegador e acesse [http://localhost:3000](http://localhost:3000).
+2. Cadastre a tarefa que gostaria de realizar
+3. Marque as tarefas como concluídas
+4. Exclua as tarefas
+<br/><br/>
+
+# :computer: Tecnologias utilizadas
+
+<img width="50" src="https://user-images.githubusercontent.com/25181517/183897015-94a058a6-b86e-4e42-a37f-bf92061753e5.png" alt="React" title="React"/>
+<img width="50" src="https://user-images.githubusercontent.com/25181517/183890598-19a0ac2d-e88a-4005-a8df-1ee36782fde1.png" alt="TypeScript" title="TypeScript"/>
+<img width="50" src="https://user-images.githubusercontent.com/25181517/202896760-337261ed-ee92-4979-84c4-d4b829c7355d.png" alt="Tailwind CSS" title="Tailwind CSS"/>
+<br/><br/>
+
+# Licença
+
+Este projeto está licenciado sob a [Licença MIT](LICENSE).
