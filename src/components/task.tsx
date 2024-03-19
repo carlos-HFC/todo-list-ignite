@@ -5,6 +5,8 @@ import { cn } from "../utils/cn"
 
 interface TaskProps extends PropsWithChildren {
   checked?: boolean
+  onToggle(): void
+  onDelete(): void
 }
 
 export function Task(props: Readonly<TaskProps>) {
@@ -14,6 +16,7 @@ export function Task(props: Readonly<TaskProps>) {
         "rounded-lg flex gap-3 bg-gray-500 border border-gray-400 p-4 group",
         props.checked && "border-gray-500",
       )}
+      onClick={props.onToggle}
     >
       <div>
         {props.checked ? (
@@ -42,7 +45,10 @@ export function Task(props: Readonly<TaskProps>) {
         {props.children}
       </div>
 
-      <button className="hover:bg-gray-400 size-6 min-w-6 rounded flex items-center justify-center border-none group/trash">
+      <button
+        className="hover:bg-gray-400 size-6 min-w-6 rounded flex items-center justify-center border-none group/trash"
+        onClick={props.onDelete}
+      >
         <Trash
           size={16}
           className="group-hover/trash:fill-red fill-gray-300"
